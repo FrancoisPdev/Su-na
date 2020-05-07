@@ -16,6 +16,8 @@
 		5C94F8462464320C001185F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C94F8442464320C001185F1 /* LaunchScreen.storyboard */; };
 		5C94F8512464320C001185F1 /* Su_naTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94F8502464320C001185F1 /* Su_naTests.swift */; };
 		5C94F85C2464320C001185F1 /* Su_naUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94F85B2464320C001185F1 /* Su_naUITests.swift */; };
+		5C94F86A2464588F001185F1 /* Screen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94F8692464588F001185F1 /* Screen1.swift */; };
+		5C94F86C246459DA001185F1 /* Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94F86B246459DA001185F1 /* Screen2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		5C94F8572464320C001185F1 /* Su-naUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Su-naUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C94F85B2464320C001185F1 /* Su_naUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Su_naUITests.swift; sourceTree = "<group>"; };
 		5C94F85D2464320C001185F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C94F8692464588F001185F1 /* Screen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1.swift; sourceTree = "<group>"; };
+		5C94F86B246459DA001185F1 /* Screen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				5C94F8362464320B001185F1 /* AppDelegate.swift */,
 				5C94F8382464320B001185F1 /* SceneDelegate.swift */,
 				5C94F83D2464320B001185F1 /* ContentView.swift */,
+				5C94F8692464588F001185F1 /* Screen1.swift */,
+				5C94F86B246459DA001185F1 /* Screen2.swift */,
 				5C94F83F2464320C001185F1 /* Assets.xcassets */,
 				5C94F8442464320C001185F1 /* LaunchScreen.storyboard */,
 				5C94F8472464320C001185F1 /* Info.plist */,
@@ -270,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C94F86C246459DA001185F1 /* Screen2.swift in Sources */,
 				5C94F83C2464320B001185F1 /* Su_na.xcdatamodeld in Sources */,
+				5C94F86A2464588F001185F1 /* Screen1.swift in Sources */,
 				5C94F8372464320B001185F1 /* AppDelegate.swift in Sources */,
 				5C94F83E2464320B001185F1 /* ContentView.swift in Sources */,
 				5C94F8392464320B001185F1 /* SceneDelegate.swift in Sources */,

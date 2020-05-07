@@ -10,7 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Bonjour, tout le monde")
+
+        NavigationView{
+            NavigationLink(destination: Screen1()) {
+                
+                Text("Go to notification")
+                
+
+            }.navigationBarTitle("Settings")
+        }
     }
 }
 
