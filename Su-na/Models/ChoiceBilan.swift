@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-//  le but ici , est de creer un tableau contenant les 6 images de l'asset bilanpic avec une boucle pour ensuite afficher la data sur l'ecran Bilan.swift
+//  le but ici , est de creer la struct contenant les 6 images de l'asset bilanpic +le text pour afficher la data sur l'ecran Bilan.swift
 //  6 choix :
 //  Alimentation
 //  Decouverte
@@ -24,6 +24,10 @@ struct ChoiceBilan: Identifiable {
     var id = UUID()
     var title: String
     var image: String
+    var cat: Category
 }
 
-var choiceBilan = [ChoiceBilan(title: "Alimentation", image: "alimentation"),ChoiceBilan(title: "Decouverte", image: "decouverte"),ChoiceBilan(title: "Detente", image: "detente"),ChoiceBilan(title: "Sport", image: "sport"),ChoiceBilan(title: "Stress", image: "stress"),ChoiceBilan(title: "Temps pour soi", image: "tempspoursoi")]
+enum Category {
+    
+    case   Alimentation,    Decouverte, Detente,    Sport,  Stress, Tempspoursoi
+}

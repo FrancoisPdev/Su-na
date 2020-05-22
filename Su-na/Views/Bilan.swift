@@ -23,107 +23,36 @@
 import SwiftUI
 
 struct Bilan: View {
+    
+    var choiceuser: ChoiceBilan
+    
+    @Binding var choicesArray: [Category]
+    
     var body: some View {
-        ScrollView{
             VStack(spacing: 30.0){
                 Spacer()
-                //            Text principale
-                Text("Qu'avez-vous besoin d'ameliorer ?")
-                
-                //          Alimentation
-//                VStack {
-//                    Button(action: {
-//                        print("Button tapped")
-//                    }) {
-//                        Image("alimentation")
-//                            .clipShape(Circle())
-//                            .foregroundColor(.gray)
-//                    }
-//                    .buttonStyle(SimpleButtonStyle())
-//                    Text("Alimentation")
-//                }
-//                //          Decouverte
-//                VStack{
-//                    Button(action: {
-//                        print("Button tapped")
-//                    }) {
-//                        Image("decouverte")
-//                            .clipShape(Circle())
-//                            .foregroundColor(.gray)
-//
-//                    }
-//                    .buttonStyle(SimpleButtonStyle())
-//                    Text("Decouverte")
-//                }
-//                //          Detente
-//                VStack{
-//                    Button(action: {
-//                        print("Button tapped")
-//                    }) {
-//                        Image("detente")
-//                            .clipShape(Circle())
-//                            .foregroundColor(.gray)
-//                    }
-//                    .buttonStyle(SimpleButtonStyle())
-//                }
-//                Text("Detente")
-//                //          Sport
-//                VStack{
-//                    Button(action: {
-//                        print("Button tapped")
-//                    }) {
-//                        Image("sport")
-//                            .clipShape(Circle())
-//                            .foregroundColor(.gray)
-//                    }
-//                    .buttonStyle(SimpleButtonStyle())
-//                    Text("Sport")
-//                }
-//                //          Stress
-//                VStack{
-//                    Button(action: {
-//                        print("Button tapped")
-//                    }) {
-//                        Image("stress")
-//                            .clipShape(Circle())
-//                            .foregroundColor(.gray)
-//                    }
-//                    .buttonStyle(SimpleButtonStyle())
-//                    Text("Stress")
-//                }
-//                //          Temps pour soi
-//                VStack{
-//                    Button(action: {
-//                        print("Button tapped")
-//                    }) {
-//                        Image("tempspoursoi")
-//
-//                            .clipShape(Circle())
-//                            .foregroundColor(.gray)
-//                    }
-//                    .buttonStyle(SimpleButtonStyle())
-//                    Text("Temps pour soi")
-//                }
-                //          Button "valider"
-                VStack{
+
+                VStack {
+
                     Button(action: {
-                        print("Button action")
+                        print("Button tapped")
                     }) {
-                        Text("Valider")
-                            .padding(10.0)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10.0)
-                                    .stroke(lineWidth: 2.0)
-                                    .shadow(color: .blue, radius: 10.0)
-                        )
+                        Image(choiceuser.image)
+                            .clipShape(Circle())
+                            .foregroundColor(.gray)
                     }
+                    .buttonStyle(SimpleButtonStyle())
+                    Text(choiceuser.title)
                 }
+                
             }
+ 
+
         }
     }
-}
-struct Bilan_Previews: PreviewProvider {
-    static var previews: some View {
-        Bilan()
-    }
-}
+
+//struct Bilan_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Bilan(choiceuser: choices[0], choicesArray: )
+//    }
+//}
