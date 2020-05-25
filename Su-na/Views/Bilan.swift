@@ -46,7 +46,7 @@ struct Bilan: View {
                         .clipShape(Circle())
                         .foregroundColor(.gray)
                 }.buttonStyle(SimpleButtonStyle())
-                .overlay(Circle().stroke(isSelected ? Color.green : Color.red, lineWidth: 2))
+                .overlay(Circle().stroke(isSelected ? Color.green : Color.white, lineWidth: 2))
 
                 Text(choiceuser.title)
                 
