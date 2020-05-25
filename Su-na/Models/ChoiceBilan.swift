@@ -21,7 +21,7 @@ import SwiftUI
 
 struct ChoiceBilan: Identifiable {
     
-    var id = UUID()
+    var id: Int
     var title: String
     var image: String
     var cat: Category

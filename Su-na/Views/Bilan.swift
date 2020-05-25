@@ -28,28 +28,35 @@ struct Bilan: View {
     
     @Binding var choicesArray: [Category]
     
+    
+    @Binding var isSelected: Bool
+    
     var body: some View {
-            VStack(spacing: 30.0){
-                Spacer()
-
-                VStack {
-
-                    Button(action: {
-                        print("Button tapped")
-                    }) {
-                        Image(choiceuser.image)
-                            .clipShape(Circle())
-                            .foregroundColor(.gray)
-                    }
-                    .buttonStyle(SimpleButtonStyle())
-                    Text(choiceuser.title)
+        VStack(spacing: 30.0){
+            Spacer()
+            
+            VStack {
+                
+                Button(action: {
+                    self.isSelected.toggle()
+                    
                 }
+                ) {
+                    Image(choiceuser.image)
+                        .clipShape(Circle())
+                        .foregroundColor(.gray)
+                }.buttonStyle(SimpleButtonStyle())
+                .overlay(Circle().stroke(isSelected ? Color.green : Color.red, lineWidth: 2))
+
+                Text(choiceuser.title)
                 
             }
- 
-
+            
         }
+        
+        
     }
+}
 
 //struct Bilan_Previews: PreviewProvider {
 //    static var previews: some View {
