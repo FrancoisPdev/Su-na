@@ -11,11 +11,14 @@ import SwiftUI
 struct TitleCategories: View {
     var title: String
     var body: some View {
-        Text("\(title)")
-        .font(.title)
-        .padding()
-        .foregroundColor(Color.gray)
-        .frame( maxWidth: .infinity, alignment: .topLeading)
+
+            Text("\(title)")
+            .font(.title)
+             .padding(.leading, 14.0)
+            .foregroundColor(Color.gray)
+           .frame( maxWidth: .infinity, alignment: .topLeading)
+           
+        
     }
 }
 
