@@ -121,22 +121,10 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		5C06BECC246944D1002B85B2 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				8D4635922477FD760077A8C3 /* CommentVideo */,
-				8D0884DF246C9E880030DD9A /* PlayerVideo */,
-				8D0884D5246C0D520030DD9A /* Passed */,
-				8D0884D4246C0D2D0030DD9A /* Live */,
-				8D0884C9246B50C30030DD9A /* Triangle.swift */,
-				8D0884D8246C3FDB0030DD9A /* GridStack.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		5C06BECD246944E4002B85B2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8DA094D8247CFEEB00A8B0D0 /* utilty */,
 				8D0884DE246C9DE10030DD9A /* PlayerVideoView */,
 				8D0884D3246C0CE30030DD9A /* PassedVideoView */,
 				8D55BDD12469903E00026353 /* LiveView */,
@@ -170,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				5C06BECD246944E4002B85B2 /* Views */,
-				5C06BECC246944D1002B85B2 /* ViewModels */,
 				5C06BECB246944B5002B85B2 /* Models */,
 				5C94F8362464320B001185F1 /* AppDelegate.swift */,
 				6FF585D824694D4C00B2ABB3 /* TabBar.swift */,
@@ -214,26 +201,11 @@
 		8D0884D3246C0CE30030DD9A /* PassedVideoView */ = {
 			isa = PBXGroup;
 			children = (
+				8D0884D1246C0B970030DD9A /* GetVideoPassed.swift */,
+				8D0884C9246B50C30030DD9A /* Triangle.swift */,
 				8D0884DA246C41B80030DD9A /* VideopassedView.swift */,
 			);
 			path = PassedVideoView;
-			sourceTree = "<group>";
-		};
-		8D0884D4246C0D2D0030DD9A /* Live */ = {
-			isa = PBXGroup;
-			children = (
-				8D0884CB246B58CB0030DD9A /* RoundedCorners.swift */,
-				8D0884CD246B69120030DD9A /* GetVideoLive.swift */,
-			);
-			path = Live;
-			sourceTree = "<group>";
-		};
-		8D0884D5246C0D520030DD9A /* Passed */ = {
-			isa = PBXGroup;
-			children = (
-				8D0884D1246C0B970030DD9A /* GetVideoPassed.swift */,
-			);
-			path = Passed;
 			sourceTree = "<group>";
 		};
 		8D0884DE246C9DE10030DD9A /* PlayerVideoView */ = {
@@ -244,30 +216,26 @@
 			path = PlayerVideoView;
 			sourceTree = "<group>";
 		};
-		8D0884DF246C9E880030DD9A /* PlayerVideo */ = {
-			isa = PBXGroup;
-			children = (
-				8D0884E0246C9ED40030DD9A /* CreationPlayer.swift */,
-				8D4635972478A3AB0077A8C3 /* Player.swift */,
-			);
-			path = PlayerVideo;
-			sourceTree = "<group>";
-		};
-		8D4635922477FD760077A8C3 /* CommentVideo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CommentVideo;
-			sourceTree = "<group>";
-		};
 		8D55BDD12469903E00026353 /* LiveView */ = {
 			isa = PBXGroup;
 			children = (
+				8D0884CD246B69120030DD9A /* GetVideoLive.swift */,
 				8D42763D246AE7570099D011 /* VideoView.swift */,
 				8D427641246AEC1E0099D011 /* TitleCategories.swift */,
 				8D0884C7246B428A0030DD9A /* Logoplayer.swift */,
 			);
 			path = LiveView;
+			sourceTree = "<group>";
+		};
+		8DA094D8247CFEEB00A8B0D0 /* utilty */ = {
+			isa = PBXGroup;
+			children = (
+				8D4635972478A3AB0077A8C3 /* Player.swift */,
+				8D0884E0246C9ED40030DD9A /* CreationPlayer.swift */,
+				8D0884CB246B58CB0030DD9A /* RoundedCorners.swift */,
+				8D0884D8246C3FDB0030DD9A /* GridStack.swift */,
+			);
+			path = utilty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
