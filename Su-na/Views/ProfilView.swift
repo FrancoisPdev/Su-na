@@ -66,32 +66,12 @@ struct ProfilView: View {
                     ScrollView(.horizontal){
                         
                         HStack {
-                            Image("yoga2")
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                                .cornerRadius(20)
-                                .aspectRatio(contentMode: .fill)
-                                .scaledToFit()
-                                .padding(.leading)
-                            Text("Yoga")
                             
-                            Image("yoga2")
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                                .cornerRadius(20)
-                                .aspectRatio(contentMode: .fill)
-                                .scaledToFit()
-                                .padding(.leading)
-                            Text("Danse")
+                            HistoryLive(imageHistory: "yoga2", textHistory: "Yoga")
+                            HistoryLive(imageHistory: "yoga2", textHistory: "Cuisine")
+                            HistoryLive(imageHistory: "yoga2", textHistory: "Sport")
                             
-                            Image("yoga2")
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                                .cornerRadius(20)
-                                .aspectRatio(contentMode: .fill)
-                                .scaledToFit()
-                            Text("Cuisine")
-                        }
+                        }.padding()
                         
                         
                         
