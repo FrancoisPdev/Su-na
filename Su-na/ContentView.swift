@@ -10,8 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-    }
+                VStack {
+            Image("yoga2")
+                .resizable()
+                .scaledToFit()
+//                .overlay(ImageOverlay(), alignment: .center)
+            Spacer()
+        }
+}
 }
 
 struct ContentView_Previews: PreviewProvider {
