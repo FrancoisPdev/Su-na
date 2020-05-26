@@ -50,9 +50,11 @@ struct MainPageConseils: View {
                     
                     VStack {
                         
-                            ListConseilsAlimentation()
-                        Text("")
-                        
+                        ListConseilsAlimentation()
+                            .padding(.vertical, 30)
+                        ListeConseilsStress()
+                            .padding(.vertical, 30)
+                        ListConseilsSport()
                     }
                 }
             }
@@ -63,18 +65,10 @@ struct MainPageConseils: View {
                     Text("Filtres")
                     
             })
-                
-                
-                .navigationBarItems(trailing:
-                    
-                    Button("Filtres")
-                    {
-                        print("")}
-                        .padding(.top, 90))
-            
+            }
         }
     }
-}
+
 
 struct MainPageConseils_Previews: PreviewProvider {
     static var previews: some View {

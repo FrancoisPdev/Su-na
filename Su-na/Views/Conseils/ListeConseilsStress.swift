@@ -28,24 +28,22 @@ struct ListeConseilsStress: View {
                     
                     NavigationLink(destination: Text("")) {
                         VStack(alignment: .leading) {
-                            Image("")
+                            Image("imgpause")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 100)
+                                .frame(width: 70)
                             
                         }
                             
                         .padding(.leading, -20)
                         
                         VStack {
-                            Text("Conseil 1 :")
+                            Text("Conseil 3 :")
                                 .font(.body)
                                 .underline()
-                            Text("")
+                            Text("Marquez des pauses dans")
                                 .font(. body)
-                            Text("")
-                            Text("")
-                            Text("")
+                            Text("la journée")
                         }
                     }.buttonStyle(PlainButtonStyle())
                 }
@@ -66,24 +64,22 @@ struct ListeConseilsStress: View {
                 HStack {
                     VStack(alignment: .leading) {
                         
-                        Image("")
+                        Image("imgstress")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 100)
+                            .frame(width: 80)
                         
                     }
                         
                     .padding(.leading, -20)
                     
                     VStack {
-                        Text("Conseil 2 :")
+                        Text("Conseil 4 :")
                             .font(.body)
                             .underline()
-                        Text("")
+                        Text("Programmez régulièrement ")
                             .font(.body)
-                        Text("")
-                        Text("")
-                        Text("")
+                        Text("une journée anti-stress !")
                     }
                     
                 }.frame(width: 320, height: 130)

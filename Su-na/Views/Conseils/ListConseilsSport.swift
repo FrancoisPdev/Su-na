@@ -20,7 +20,7 @@ struct ListConseilsSport: View {
                     
                     NavigationLink(destination: Text("")) {
                         VStack(alignment: .leading) {
-                            Image("")
+                            Image("imgapple")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 100)
@@ -30,14 +30,13 @@ struct ListConseilsSport: View {
                         .padding(.leading, -20)
                         
                         VStack {
-                            Text("Conseil 1 :")
+                            Text("Conseil 5 :")
                                 .font(.body)
                                 .underline()
-                            Text("")
+                            Text("N'oubliez pas de vous")
                                 .font(. body)
-                            Text("")
-                            Text("")
-                            Text("")
+                            Text("alimenter avant d'aller")
+                            Text("faire du sport")
                         }
                     }.buttonStyle(PlainButtonStyle())
                 }
@@ -68,14 +67,13 @@ struct ListConseilsSport: View {
                     .padding(.leading, -20)
                     
                     VStack {
-                        Text("Conseil 2 :")
+                        Text("Conseil 6 :")
                             .font(.body)
                             .underline()
-                        Text("")
+                        Text("Un petit exercice pour")
                             .font(.body)
-                        Text("")
-                        Text("")
-                        Text("")
+                        Text("les abdos, ça vous dit ?")
+                        Text("Go !")
                     }
                     
                 }.frame(width: 320, height: 130)

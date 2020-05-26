@@ -49,6 +49,9 @@ struct MainPageObjectifs: View {
                                 VStack {
                                     Text(objectif.obj)
                                 }
+                                
+                                .padding(.vertical, 30)
+                                
                                 VStack {
                                     Toggle(
                                         isOn: self.$details[objectif.id].doo, label: {
@@ -62,7 +65,17 @@ struct MainPageObjectifs: View {
                             .stroke(Color.blue, lineWidth: 6)
                             .frame(width: 350, height: 350))
                     
-                        .padding()
+                        .padding(.horizontal, 30)
+                    
+                    
+                    VStack {
+                        
+                        NavigationLink(destination: ChoicesBilan()) {
+                            Text("Bilan")
+                        }
+                        
+                    }
+                    
                     
                     Spacer()
                 }

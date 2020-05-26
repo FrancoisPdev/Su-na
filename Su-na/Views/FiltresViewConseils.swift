@@ -9,10 +9,10 @@
 import SwiftUI
 
 struct FiltresViewConseils: View {
-    @State private var ToggleStress : Bool = false
-    @State private var ToggleAlimentation : Bool = false
+    @State private var ToggleStress : Bool = true
+    @State private var ToggleAlimentation : Bool = true
     @State private var ToggleTempsPourSoi : Bool = false
-    @State private var ToggleSport : Bool = false
+    @State private var ToggleSport : Bool = true
     @State private var ToggleDetente : Bool = false
     @State private var ToggleDecouverte : Bool = false
     
