@@ -35,21 +35,24 @@ struct MainPageConseils: View {
                             
                         }
                         .frame(width: 350, height: 200)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(Color.blue, lineWidth: 6)
+                            //                                .frame(width: 350, height: 200)
+                        )
                             //                            .border(Color.gray, width: 3)
                             //                            .cornerRadius(20)
                             .shadow(radius: 20)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color.blue, lineWidth: 6)
-                                    .frame(width: 350, height: 200))
+                        
                     }
                         
                     .padding(.bottom, 40)
                     
                     VStack {
-                       Text("a")
-//                        
-//
+                        
+                            ListConseilsAlimentation()
+                        Text("")
+                        
                     }
                 }
             }
@@ -60,14 +63,14 @@ struct MainPageConseils: View {
                     Text("Filtres")
                     
             })
-            
-            //
-            //            .navigationBarItems(trailing:
-            //
-            //                Button("Filtres")
-            //                {
-            //                    print("")}
-            //                    .padding(.top, 90))
+                
+                
+                .navigationBarItems(trailing:
+                    
+                    Button("Filtres")
+                    {
+                        print("")}
+                        .padding(.top, 90))
             
         }
     }

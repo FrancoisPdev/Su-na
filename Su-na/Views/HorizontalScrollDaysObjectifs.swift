@@ -11,7 +11,7 @@ import SwiftUI
 struct HorizontalScrollDaysObjectifs: View {
     
 //    @Binding var selectedDay: Int = 2
-    @State private var selectedIndex = 0
+    @State private var selectedIndex = 2
     
     @State var monday: Bool = false
     @State var tuesday: Bool = false

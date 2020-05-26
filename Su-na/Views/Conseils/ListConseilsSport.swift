@@ -1,5 +1,5 @@
 //
-//  ListConseils.swift
+//  ListConseilsSport.swift
 //  Su-na
 //
 //  Created by Reyhan 2 on 26/05/2020.
@@ -8,28 +8,19 @@
 
 import SwiftUI
 
-struct ListConseils: View {
+struct ListConseilsSport: View {
     var body: some View {
-        
-        
-        //        VStack {
-        //
-        //            struct ConseilOne {
-        //
-        //                var Conseil1 {
-        //                    VStack {
-        
         VStack {
             
-            struct ConseilOne (
+            //            struct ConseilOne {
             
             VStack {
                 
                 HStack {
                     
-                    NavigationLink(destination: DetailBreadViewConseils()) {
+                    NavigationLink(destination: Text("")) {
                         VStack(alignment: .leading) {
-                            Image("imgbreaddd")
+                            Image("")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 100)
@@ -42,22 +33,24 @@ struct ListConseils: View {
                             Text("Conseil 1 :")
                                 .font(.body)
                                 .underline()
-                            Text("Le pain maison est ")
+                            Text("")
                                 .font(. body)
-                            Text("meilleur pour la santé ")
-                            Text("que celui en magasin !")
-                            Text("Fais ton propre pain !")
+                            Text("")
+                            Text("")
+                            Text("")
                         }
                     }.buttonStyle(PlainButtonStyle())
                 }
                 .frame(width: 320, height: 130)
-                .border(Color.gray, width: 3)
-                .cornerRadius(20)
-                .shadow(radius: 20)
                     
-                .padding(.bottom, 25)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 25)
+                        .stroke(Color.blue, lineWidth: 6))
+                    
+                    .shadow(radius: 20)
+                    
+                    .padding(.bottom, 25)
                 
-            )
             }
             
             VStack {
@@ -65,7 +58,7 @@ struct ListConseils: View {
                 HStack {
                     VStack(alignment: .leading) {
                         
-                        Image("imgbreaddd")
+                        Image("")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 100)
@@ -78,27 +71,29 @@ struct ListConseils: View {
                         Text("Conseil 2 :")
                             .font(.body)
                             .underline()
-                        Text("Le pain maison est ")
+                        Text("")
                             .font(.body)
-                        Text("meilleur pour la santé ")
-                        Text("que celui en magasin !")
-                        Text("Fais ton propre pain !")
+                        Text("")
+                        Text("")
+                        Text("")
                     }
                     
                 }.frame(width: 320, height: 130)
-                    .border(Color.gray, width: 3)
-                    .cornerRadius(20)
+                    
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color.blue, lineWidth: 6))
+                    
                     .shadow(radius: 20)
-                //        }
-                //    }
-                //}
             }
         }
     }
 }
+//}
 
-struct ListConseils_Previews: PreviewProvider {
+
+struct ListConseilsSport_Previews: PreviewProvider {
     static var previews: some View {
-        ListConseils()
+        ListConseilsSport()
     }
 }
