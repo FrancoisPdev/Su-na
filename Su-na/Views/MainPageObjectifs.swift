@@ -30,71 +30,71 @@ struct MainPageObjectifs: View {
 //    }
     
     var body: some View {
-        NavigationView {
-            
-            VStack {
-                
-                HorizontalScrollDays()
-                
-                VStack(alignment: .trailing) {
-                    HStack {
-                        
-                        Text("Mercredi")
-                            .font(.title)
-                            .padding(.trailing, 190)
-                    }
-                }
-                
-                //                .padding()
+            NavigationView {
                 
                 VStack {
                     
-                    ForEach(details, id: \.id) {
-                        objectif in
+                    HorizontalScrollDaysObjectifs()
+                    
+                    VStack(alignment: .trailing) {
                         HStack {
-                            VStack {
-                                Image(objectif.image)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 50)
-                            }
                             
-//                            VStack {
-//                                Text(objectif.obj)
-//                            }
-//                            VStack {
-////                                Toggle(
-////                                    isOn: self.$objectifOfTheDay[objectif.id].doo, label: {
-////                                        Text("")
-////                                })
-//                            }
+                            Text("Mercredi")
+                                .font(.title)
+                                .padding(.trailing, 190)
                         }
                     }
-                }
+                    
+                    //                .padding()
+                    
+                    VStack {
+                        
+                        ForEach(details, id: \.id) {
+                            objectif in
+                            HStack {
+                                VStack {
+                                    Image(objectif.image)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 50)
+                                }
+                                
+    //                            VStack {
+    //                                Text(objectif.obj)
+    //                            }
+    //                            VStack {
+    ////                                Toggle(
+    ////                                    isOn: self.$objectifOfTheDay[objectif.id].doo, label: {
+    ////                                        Text("")
+    ////                                })
+    //                            }
+                            }
+                        }
+                    }
+                    
+                }.overlay(
+                    RoundedRectangle(cornerRadius: 25)
+                        .stroke(Color.blue, lineWidth: 6)
+                        .frame(width: 350, height: 350))
+                    
+                    .padding(.top, 170)
                 
-            }.overlay(
-                RoundedRectangle(cornerRadius: 25)
-                    .stroke(Color.blue, lineWidth: 6)
-                    .frame(width: 350, height: 350))
                 
-                .padding(.top, 170)
-            
-            
-            
-            
-            
-            
-            Spacer()
-                .navigationBarTitle("Objectifs")
+                
+                
+                
+                
+                Spacer()
+                    .navigationBarTitle("Objectifs")
+            }
         }
     }
-}
 
-struct MainPageObjectifs_Previews: PreviewProvider {
-    static var previews: some View {
-        MainPageObjectifs()
+    struct MainPageObjectifs_Previews: PreviewProvider {
+        static var previews: some View {
+            MainPageObjectifs()
+        }
     }
-}
 
 
 

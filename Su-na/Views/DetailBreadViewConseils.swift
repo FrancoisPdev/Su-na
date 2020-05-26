@@ -1,5 +1,5 @@
 //
-//  DetaildecouvrirView.swift
+//  DetailBreadView.swift
 //  Page conseils
 //
 //  Created by Reyhan 2 on 13/05/2020.
@@ -8,17 +8,17 @@
 
 import SwiftUI
 
-struct DetailRespirationView: View {
+struct DetailBreadViewConseils: View {
     var body: some View {
         ScrollView {
             VStack {
                 VStack {
                     
-                    Text("Conseil du jour")
+                    Text("Conseil 1")
                         .font(.largeTitle)
                         .padding(.top, 0)
                     
-                    Text("Exercice de respiration")
+                    Text("Faire du pain")
                         .font(.title)
                         .bold()
                         .padding(.top, 20)
@@ -26,7 +26,7 @@ struct DetailRespirationView: View {
                     
                     VStack {
                         
-                        Image("imgbreath")
+                        Image("imgbreaddd")
                             .resizable()
                             .scaledToFit()
                             .padding(.top, 10)
@@ -40,7 +40,7 @@ struct DetailRespirationView: View {
                     VStack(alignment: .trailing) {
                         
                         HStack {
-                            Text("Durée : 1 minute")
+                            Text("Durée : 3h15 (2h de repos, 1h de cuisson et 15mn de de préparation)")
                                 .underline()
                                 .padding(.leading, 25)
                                 .padding(.top, 10)
@@ -49,35 +49,46 @@ struct DetailRespirationView: View {
                     }
                     VStack(alignment: .center) {
                         
-                        Text("Cet exercice va nous permettre de se calmer, de mieux dormir, de baisser sa tension et d’être plus stable.")
+                        Text("Rien de mieux dans toutes les sortes de pain que celui maison 😉. Faisons-en !")
                             .font(.headline)
                             .padding()
                         
                     }
                     
+                    VStack {
+                        
+                        Text("Prérecquis pour 4 personnes:")
+                            .bold()
+                            .underline()
+                        
+                        Text("- 350 g de farine")
+                        Text("- 10 g de levure de boulangerie")
+                        Text("- 25 cl d'eau tiède")
+                        Text("- sel")
+                        
+                        
+                    }
                     
                     Text("Alors ? Prêt ?")
                         .bold()
                         .font(.title)
+                        .padding(.top, 20)
                     
                     VStack {
                         
-                        Text("1. Boucher votre narine gauche avec l’annulaire")
+                        Text("1. Versez la farine et le sel dans une terrine. Mélangez ces le tout et creusez ensuite un puits au milieu avec votre main")
                             .padding()
                         
-                        Text("2. Expirer de la narine droite puis inspirer de la même narine")
+                        Text("2. Dans un autre récipient, versez de l'eau tiède et ajoutez-y la levure boulangère. Mélangez le tout avec une cuillère pour diluer la levure. Une fois le mélange bien homogène, versez-le dans le puits de la terrine")
                             .padding()
                         
-                        Text("3. Boucher la narine droite avec le pouce")
+                        Text("3. Mélangez progressivement les ingrédients de votre terrine, puis pétrissez la pâte manuellement pendant environ 10 min, jusqu'à ce que celle-ci devienne lisse et élastique.  N'hésitez pas à enduire vos mains de farine afin que la pâte n'accroche pas sur votre peau et soit plus facile à travailler.")
                             .padding()
                         
-                        Text("4. Expirer de la narine gauche puis inspirer de la même narine")
+                        Text("4. Mettez la pâte pétrie dans un moule à cake que vous aurez préalablement beurré et laissez-la gonfler pendant au moins 2 heures, à température ambiante et recouverte d'un torchon propre. Enfournez-la ensuite au four à 180°C pendant 1 heure jusqu'à ce que la croûte commence à dorer.")
                             .padding()
                         
-                        Text("5. Répéter les étapes 1 à 4 pendant une minute")
-                            .padding()
-                        
-                        Text("6. Terminer l’exercice expirant lentement par les deux narines")
+                        Text("5. Bon appétit ! 😋")
                             .padding()
                         
                     }
@@ -87,9 +98,8 @@ struct DetailRespirationView: View {
     }
 }
 
-
-struct DetaildecouvrirView_Previews: PreviewProvider {
+struct DetailBreadViewConseils_Previews: PreviewProvider {
     static var previews: some View {
-        DetailRespirationView()
+        DetailBreadViewConseils()
     }
 }

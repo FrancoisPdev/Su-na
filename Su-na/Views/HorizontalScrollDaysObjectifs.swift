@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct HorizontalScrollDays: View {
+struct HorizontalScrollDaysObjectifs: View {
     
 //    @Binding var selectedDay: Int = 2
     @State private var selectedIndex = 0
@@ -216,8 +216,8 @@ struct HorizontalScrollDays: View {
     }
 }
 
-struct HorScrollDays_Previews: PreviewProvider {
+struct HorScrollDaysObjectifs_Previews: PreviewProvider {
     static var previews: some View {
-        HorizontalScrollDays()
+        HorizontalScrollDaysObjectifs()
     }
 }

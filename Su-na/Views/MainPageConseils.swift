@@ -21,7 +21,7 @@ struct MainPageConseils: View {
                         
                         VStack {
                             
-                            NavigationLink(destination: DetailRespirationView()) {
+                            NavigationLink(destination: DetailRespirationViewConseils()) {
                                 Image("imgbreath")
                                     .resizable()
                                     .scaledToFit()
@@ -33,78 +33,24 @@ struct MainPageConseils: View {
                             }.buttonStyle(PlainButtonStyle())
                             
                             
-                        } .frame(width: 350, height: 200)
-                            .border(Color.gray, width: 3)
-                            .cornerRadius(20)
+                        }
+                        .frame(width: 350, height: 200)
+                            //                            .border(Color.gray, width: 3)
+                            //                            .cornerRadius(20)
                             .shadow(radius: 20)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 25)
+                                    .stroke(Color.blue, lineWidth: 6)
+                                    .frame(width: 350, height: 200))
                     }
                         
                     .padding(.bottom, 40)
                     
-                    
-                    
-                    HStack {
-                        
-                        
-                        NavigationLink(destination: DetailBreadView()) {
-                            
-                            VStack(alignment: .leading) {
-                                Image("imgbreaddd")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100)
-                                
-                            }
-                                
-                                
-                            .padding(.leading, -20)
-                            
-                            VStack {
-                                Text("Conseil 1 :")
-                                    .font(.body)
-                                    .underline()
-                                Text("Le pain maison est ")
-                                    .font(.body)
-                                Text("meilleur pour la santé ")
-                                Text("que celui en magasin !")
-                                Text("Fais ton propre pain !")
-                            }
-                        }.buttonStyle(PlainButtonStyle())
-                    }.frame(width: 320, height: 130)
-                        .border(Color.gray, width: 3)
-                        .cornerRadius(20)
-                        .shadow(radius: 20)
-                        
-                        .padding(.bottom, 25)
-                    
-                    HStack {
-                        VStack(alignment: .leading) {
-                            
-                            Image("imgbreaddd")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100)
-                            
-                        }
-                            
-                        .padding(.leading, -20)
-                        
-                        VStack {
-                            Text("Conseil 2 :")
-                                .font(.body)
-                                .underline()
-                            Text("Le pain maison est ")
-                                .font(.body)
-                            Text("meilleur pour la santé ")
-                            Text("que celui en magasin !")
-                            Text("Fais ton propre pain !")
-                        }
-                        
-                    }.frame(width: 320, height: 130)
-                        .border(Color.gray, width: 3)
-                        .cornerRadius(20)
-                        .shadow(radius: 20)
-                    
+                    VStack {
+                       Text("a")
+//                        
+//
+                    }
                 }
             }
             .navigationBarTitle("Conseils")
