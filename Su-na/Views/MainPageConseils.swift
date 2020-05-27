@@ -33,78 +33,29 @@ struct MainPageConseils: View {
                             }.buttonStyle(PlainButtonStyle())
                             
                             
-                        } .frame(width: 350, height: 200)
-                            .border(Color.gray, width: 3)
-                            .cornerRadius(20)
+                        }
+                        .frame(width: 350, height: 200)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(Color.blue, lineWidth: 6)
+                            //                                .frame(width: 350, height: 200)
+                        )
+                            //                            .border(Color.gray, width: 3)
+                            //                            .cornerRadius(20)
                             .shadow(radius: 20)
+    
                     }
                         
                     .padding(.bottom, 40)
                     
-                    
-                    
-                    HStack {
+                    VStack {
                         
-                        
-                        NavigationLink(destination: DetailBreadView()) {
-                            
-                            VStack(alignment: .leading) {
-                                Image("imgbreaddd")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100)
-                                
-                            }
-                                
-                                
-                            .padding(.leading, -20)
-                            
-                            VStack {
-                                Text("Conseil 1 :")
-                                    .font(.body)
-                                    .underline()
-                                Text("Le pain maison est ")
-                                    .font(.body)
-                                Text("meilleur pour la santé ")
-                                Text("que celui en magasin !")
-                                Text("Fais ton propre pain !")
-                            }
-                        }.buttonStyle(PlainButtonStyle())
-                    }.frame(width: 320, height: 130)
-                        .border(Color.gray, width: 3)
-                        .cornerRadius(20)
-                        .shadow(radius: 20)
-                        
-                        .padding(.bottom, 25)
-                    
-                    HStack {
-                        VStack(alignment: .leading) {
-                            
-                            Image("imgbreaddd")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100)
-                            
-                        }
-                            
-                        .padding(.leading, -20)
-                        
-                        VStack {
-                            Text("Conseil 2 :")
-                                .font(.body)
-                                .underline()
-                            Text("Le pain maison est ")
-                                .font(.body)
-                            Text("meilleur pour la santé ")
-                            Text("que celui en magasin !")
-                            Text("Fais ton propre pain !")
-                        }
-                        
-                    }.frame(width: 320, height: 130)
-                        .border(Color.gray, width: 3)
-                        .cornerRadius(20)
-                        .shadow(radius: 20)
-                    
+                        ListConseilsAlimentation()
+                            .padding(.vertical, 30)
+                        ListeConseilsStress()
+                            .padding(.vertical, 30)
+                        ListConseilsSport()
+                    }
                 }
             }
             .navigationBarTitle("Conseils")
@@ -114,18 +65,10 @@ struct MainPageConseils: View {
                     Text("Filtres")
                     
             })
-            
-            //
-            //            .navigationBarItems(trailing:
-            //
-            //                Button("Filtres")
-            //                {
-            //                    print("")}
-            //                    .padding(.top, 90))
-            
+            }
         }
     }
-}
+
 
 struct MainPageConseils_Previews: PreviewProvider {
     static var previews: some View {

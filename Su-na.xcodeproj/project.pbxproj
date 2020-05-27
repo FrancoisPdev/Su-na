@@ -21,6 +21,10 @@
 		5CDA2BF2247D326700A40356 /* SimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA2BEE247D326700A40356 /* SimpleButton.swift */; };
 		5CDA2BF3247D326700A40356 /* ChoicesBilan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA2BEF247D326700A40356 /* ChoicesBilan.swift */; };
 		5CDA2BF4247D326700A40356 /* Bilan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA2BF0247D326700A40356 /* Bilan.swift */; };
+		6F29B452247D922900412327 /* ListConseilsAlimentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F29B451247D922900412327 /* ListConseilsAlimentation.swift */; };
+		6F29B454247D92C700412327 /* ListeConseilsStress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F29B453247D92C700412327 /* ListeConseilsStress.swift */; };
+		6F29B456247D930F00412327 /* ListConseilsSport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F29B455247D930F00412327 /* ListConseilsSport.swift */; };
+		6F44668C247E4EBA00A0D20B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF585D824694D4C00B2ABB3 /* TabBar.swift */; };
 		6F4D0F1B247C13FF00EF4228 /* MainPageObjectifs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D0F1A247C13FF00EF4228 /* MainPageObjectifs.swift */; };
 		6F4D0F1D247C142800EF4228 /* ObjectifsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D0F1C247C142800EF4228 /* ObjectifsDetails.swift */; };
 		6F4D0F21247C145100EF4228 /* HorizontalScrollDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D0F20247C145100EF4228 /* HorizontalScrollDays.swift */; };
@@ -85,6 +89,9 @@
 		5CDA2BEE247D326700A40356 /* SimpleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleButton.swift; sourceTree = "<group>"; };
 		5CDA2BEF247D326700A40356 /* ChoicesBilan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoicesBilan.swift; sourceTree = "<group>"; };
 		5CDA2BF0247D326700A40356 /* Bilan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bilan.swift; sourceTree = "<group>"; };
+		6F29B451247D922900412327 /* ListConseilsAlimentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConseilsAlimentation.swift; sourceTree = "<group>"; };
+		6F29B453247D92C700412327 /* ListeConseilsStress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeConseilsStress.swift; sourceTree = "<group>"; };
+		6F29B455247D930F00412327 /* ListConseilsSport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConseilsSport.swift; sourceTree = "<group>"; };
 		6F4D0F1A247C13FF00EF4228 /* MainPageObjectifs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageObjectifs.swift; sourceTree = "<group>"; };
 		6F4D0F1C247C142800EF4228 /* ObjectifsDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectifsDetails.swift; sourceTree = "<group>"; };
 		6F4D0F20247C145100EF4228 /* HorizontalScrollDays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollDays.swift; sourceTree = "<group>"; };
@@ -161,6 +168,7 @@
 				6F4D0F24247C185B00EF4228 /* DetailRespirationView.swift */,
 				6F4D0F23247C185B00EF4228 /* FiltresViewConseils.swift */,
 				6F4D0F22247C185A00EF4228 /* MainPageConseils.swift */,
+				6F29B450247D91E100412327 /* Conseils */,
 				8DA094D8247CFEEB00A8B0D0 /* utilty */,
 				8D0884DE246C9DE10030DD9A /* PlayerVideoView */,
 				8D0884D3246C0CE30030DD9A /* PassedVideoView */,
@@ -233,6 +241,16 @@
 				5C94F85D2464320C001185F1 /* Info.plist */,
 			);
 			path = "Su-naUITests";
+			sourceTree = "<group>";
+		};
+		6F29B450247D91E100412327 /* Conseils */ = {
+			isa = PBXGroup;
+			children = (
+				6F29B451247D922900412327 /* ListConseilsAlimentation.swift */,
+				6F29B453247D92C700412327 /* ListeConseilsStress.swift */,
+				6F29B455247D930F00412327 /* ListConseilsSport.swift */,
+			);
+			path = Conseils;
 			sourceTree = "<group>";
 		};
 		8D0884D3246C0CE30030DD9A /* PassedVideoView */ = {
@@ -413,6 +431,7 @@
 				02C759C5247D0A6C00D80210 /* AppDelegate.swift in Sources */,
 				6F4D0F21247C145100EF4228 /* HorizontalScrollDays.swift in Sources */,
 				8D0884D9246C3FDB0030DD9A /* GridStack.swift in Sources */,
+				6F29B452247D922900412327 /* ListConseilsAlimentation.swift in Sources */,
 				8D0884DB246C41B80030DD9A /* VideopassedView.swift in Sources */,
 				8D0884DD246C64CC0030DD9A /* videoPlanView.swift in Sources */,
 				5CDA2BF3247D326700A40356 /* ChoicesBilan.swift in Sources */,
@@ -420,9 +439,11 @@
 				8D0884C8246B428A0030DD9A /* Logoplayer.swift in Sources */,
 				5CDA2BF4247D326700A40356 /* Bilan.swift in Sources */,
 				8D0884D2246C0B970030DD9A /* GetVideoPassed.swift in Sources */,
+				6F29B454247D92C700412327 /* ListeConseilsStress.swift in Sources */,
 				02C759C3247D09BA00D80210 /* SceneDelegate.swift in Sources */,
 				6F4D0F1D247C142800EF4228 /* ObjectifsDetails.swift in Sources */,
 				6F4D0F1B247C13FF00EF4228 /* MainPageObjectifs.swift in Sources */,
+				6F29B456247D930F00412327 /* ListConseilsSport.swift in Sources */,
 				8D3F564E2477DE41001BC4B2 /* CommentVideo.swift in Sources */,
 				8D42763A246AA4110099D011 /* UrlVideo.swift in Sources */,
 				8D0884CA246B50C30030DD9A /* Triangle.swift in Sources */,
@@ -430,6 +451,7 @@
 				6F4D0F27247C185B00EF4228 /* FiltresViewConseils.swift in Sources */,
 				6F4D0F28247C185B00EF4228 /* DetailRespirationView.swift in Sources */,
 				6F4D0F29247C185B00EF4228 /* DetailBreadView.swift in Sources */,
+				6F44668C247E4EBA00A0D20B /* TabBar.swift in Sources */,
 				5C94F83E2464320B001185F1 /* ContentView.swift in Sources */,
 				8D0884CC246B58CB0030DD9A /* RoundedCorners.swift in Sources */,
 				8D0884E1246C9ED40030DD9A /* CreationPlayer.swift in Sources */,

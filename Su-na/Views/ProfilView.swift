@@ -36,7 +36,7 @@ struct ProfilView: View {
                         }
                         
             
-                    Spacer()
+                    .padding(.vertical, 40)
                     
                 }
                 
@@ -68,8 +68,8 @@ struct ProfilView: View {
                         HStack {
                             
                             HistoryLive(imageHistory: "yoga2", textHistory: "Yoga")
-                            HistoryLive(imageHistory: "yoga2", textHistory: "Cuisine")
-                            HistoryLive(imageHistory: "yoga2", textHistory: "Sport")
+                            HistoryLive(imageHistory: "imgapple", textHistory: "Cuisine")
+                            HistoryLive(imageHistory: "sport", textHistory: "Sport")
                             
                         }.padding()
                         

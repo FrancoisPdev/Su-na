@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-struct HorizontalScrollDays: View {
+struct HorizontalScrollDaysObjectifs: View {
     
 //    @Binding var selectedDay: Int = 2
-    @State private var selectedIndex = 0
+    @State private var selectedIndex = 2
     
     @State var monday: Bool = false
     @State var tuesday: Bool = false
@@ -48,7 +48,7 @@ struct HorizontalScrollDays: View {
                                 .stroke(selectedIndex == 0 ? Color.gray : .blue, lineWidth: 6)
                     )
                         .tag(0)
-                }
+}
                 .padding(.top)
                 .padding(.leading, 12)
                 .buttonStyle(PlainButtonStyle())
@@ -99,7 +99,7 @@ struct HorizontalScrollDays: View {
                                 .stroke(selectedIndex == 2 ? Color.gray : .blue, lineWidth: 6)
                     )
                         .tag(2)
-                }
+}
                 .padding(.top)
                 .padding(.leading, 12)
                 .buttonStyle(PlainButtonStyle())
@@ -150,7 +150,7 @@ struct HorizontalScrollDays: View {
                                 .stroke(selectedIndex == 4 ? Color.gray : .blue, lineWidth: 6)
                     )
                         .tag(4)
-                }
+}
                 .padding(.top)
                 .padding(.leading, 12)
                 .buttonStyle(PlainButtonStyle())
@@ -190,7 +190,6 @@ struct HorizontalScrollDays: View {
                 }) {
                     
                     Text("Dim.")
-                        
                         .font(.system(size: 13))
                         .bold()
                         .padding()
@@ -216,8 +215,8 @@ struct HorizontalScrollDays: View {
     }
 }
 
-struct HorScrollDays_Previews: PreviewProvider {
+struct HorScrollDaysObjectifs_Previews: PreviewProvider {
     static var previews: some View {
-        HorizontalScrollDays()
+        HorizontalScrollDaysObjectifs()
     }
 }

@@ -9,17 +9,17 @@
 import SwiftUI
 
 struct FiltresViewConseils: View {
-    @State private var isToggle : Bool = false
-    @State private var isToggle2 : Bool = false
-    @State private var isToggle3 : Bool = false
-    @State private var isToggle4 : Bool = false
-    @State private var isToggle5 : Bool = false
-    @State private var isToggle6 : Bool = false
+    @State private var ToggleStress : Bool = true
+    @State private var ToggleAlimentation : Bool = true
+    @State private var ToggleTempsPourSoi : Bool = false
+    @State private var ToggleSport : Bool = true
+    @State private var ToggleDetente : Bool = false
+    @State private var ToggleDecouverte : Bool = false
     
     var body: some View {
         //        NavigationView {
         VStack {
-            Toggle(isOn: $isToggle){
+            Toggle(isOn: $ToggleStress){
                 Text("STRESS")
                     .font(.title)
                 
@@ -27,34 +27,34 @@ struct FiltresViewConseils: View {
                 .padding(.bottom, 20)
                 .padding(.top, 50)
             
-            Toggle(isOn: $isToggle2){
+            Toggle(isOn: $ToggleAlimentation){
                 Text("ALIMENTAION")
                     .font(.title)
             }.padding(.trailing, 20)
                 .padding(.bottom, 20)
             
             
-            Toggle(isOn: $isToggle3){
+            Toggle(isOn: $ToggleTempsPourSoi){
                 Text("TEMPS POUR SOI")
                     .font(.title)
             }.padding(.trailing, 20)
                 .padding(.bottom, 20)
+  
             
-            
-            Toggle(isOn: $isToggle4){
+            Toggle(isOn: $ToggleSport){
                 Text("SPORT")
                     .font(.title)
             }.padding(.trailing, 20)
                 .padding(.bottom, 20)
             
-            Toggle(isOn: $isToggle5){
+            Toggle(isOn: $ToggleDetente){
                 Text("DETENTE")
                     .font(.title)
                 
             }.padding(.trailing, 20)
                 .padding(.bottom, 20)
             
-            Toggle(isOn: $isToggle6){
+            Toggle(isOn: $ToggleDecouverte){
                 Text("DECOUVERTE")
                     .font(.title)
             }.padding(.trailing, 20)
@@ -73,6 +73,7 @@ struct FiltresView_Previews: PreviewProvider {
         FiltresViewConseils()
     }
 }
+
 
 //@State private var isToggle : Bool = false
 // var body: some View {

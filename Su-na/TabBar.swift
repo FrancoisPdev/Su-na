@@ -11,22 +11,22 @@ import SwiftUI
 struct TabBar: View {
     var body: some View {
             TabView {
-                Text("")
+                MainPageObjectifs()
                     .tabItem {
                         Image(systemName: "bolt")
                         Text("Objectifs")
                 }
-                Text("")
+                MainPageConseils()
                     .tabItem {
                         Image(systemName: "lightbulb")
                         Text("Conseils")
                 }
-                Text("")
+                PageVideo()
                     .tabItem {
                         Image(systemName: "arrowtriangle.right")
                         Text("Vidéos")
                 }
-                Text("")
+                ProfilView()
                     .tabItem {
                         Image(systemName: "person")
                         Text("Profil")

@@ -13,88 +13,93 @@ struct MainPageObjectifs: View {
     
 //    @State private var selectedDay: Int = 0
     @State var obj1 = ""
-    //    @State var details: [Objectifs] = [
-    //        Objectifs(image: "imgbreath", obj: "Faire 30 mn de footing", doo: false, point: 10, id: 0),
-    //        Objectifs(image: "imgbreath", obj: "Faire une séance de yoga", doo: false, point: 15, id: 1)
-    //    ]
+        @State var details: [DetailsObjectifs] = [
+            DetailsObjectifs(image: "imgbreath", obj: "Faire 30 mn de footing", doo: false, point: 10, id: 0),
+            DetailsObjectifs(image: "imgbreath", obj: "Faire une séance de yoga", doo: false, point: 15, id: 1)
+        ]
     
-    
-//    @State var objectifOfTheDay: [Objectifs] {
-//        switch selectedDay {
-//        case 1:
-//            return details1
-//
-//        default:
-//            return details
-//        }
-//    }
     
     var body: some View {
-        NavigationView {
-            
-            VStack {
+            NavigationView {
                 
-                HorizontalScrollDays()
-                
-                VStack(alignment: .trailing) {
+                VStack {
+                    
+                    HorizontalScrollDaysObjectifs()
+                    
                     HStack {
                         
                         Text("Mercredi")
                             .font(.title)
-                            .padding(.trailing, 190)
+                            .padding(.trailing,210)
                     }
-                }
-                
-                //                .padding()
-                
-                VStack {
-                    
-                    ForEach(details, id: \.id) {
-                        objectif in
-                        HStack {
-                            VStack {
-                                Image(objectif.image)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 50)
+                    Spacer()
+
+                    VStack {
+                        
+                        ForEach(details, id: \.id) {
+                            objectif in
+                            HStack {
+//                                VStack {
+                                    
+//                                    Image("imgfoot")
+//                                    Image(objectif.image)
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 50)
+//                                }
+                                
+                                VStack {
+                                    Text(objectif.obj)
+                                }
+                                
+                                .padding(.vertical, 30)
+VStack {
+                                    Toggle(
+                                        isOn: self.$details[objectif.id].doo, label: {
+                                            Text("")
+                                    })
+                                }
                             }
-                            
-//                            VStack {
-//                                Text(objectif.obj)
-//                            }
-//                            VStack {
-////                                Toggle(
-////                                    isOn: self.$objectifOfTheDay[objectif.id].doo, label: {
-////                                        Text("")
-////                                })
-//                            }
                         }
+                    } .overlay(
+                        RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color.blue, lineWidth: 6)
+                            .frame(width: 350, height: 350))
+                    
+                        .padding(.horizontal, 30)
+                    
+                    Spacer()
+                    
+                    VStack {
+                        
+                        NavigationLink(destination: ChoicesBilan()) {
+                            Text("Bilan")
+                        }
+                        
                     }
+                    
+                    
+                    Spacer()
                 }
                 
-            }.overlay(
-                RoundedRectangle(cornerRadius: 25)
-                    .stroke(Color.blue, lineWidth: 6)
-                    .frame(width: 350, height: 350))
+                    
+//                    .padding(.top, 170)
                 
-                .padding(.top, 170)
-            
-            
-            
-            
-            
-            
-            Spacer()
-                .navigationBarTitle("Objectifs")
+                
+                
+                
+                
+                
+                    .navigationBarTitle("Objectifs")
+            }
         }
     }
-}
 
-struct MainPageObjectifs_Previews: PreviewProvider {
-    static var previews: some View {
-        MainPageObjectifs()
+    struct MainPageObjectifs_Previews: PreviewProvider {
+        static var previews: some View {
+            MainPageObjectifs()
+        }
     }
-}
 
 
 
